@@ -112,7 +112,7 @@ define stunnel::tun(
     $accept,
     $connect,
     $conf_dir    = $stunnel::params::conf_dir,
-    $verify,
+    $verify      = undef,
 ) {
 
   $ssl_version_real = $ssl_version ? {

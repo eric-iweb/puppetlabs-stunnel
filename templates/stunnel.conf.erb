@@ -5,11 +5,9 @@ key = <%= private_key %>
 CAfile = <%= ca_file %>
 CRLfile = <%= crl_file %>
 sslVersion = <%= ssl_version_real %>
-
-unless (defined?(verify)).nil?
+<% unless (defined?(verify)).nil? %>
 verify = <%= verify %>
-end
-
+<% end %>
 chroot = <%= chroot %>
 setuid = <%= user %>
 setgid = <%= group %>

@@ -5,6 +5,10 @@ key = <%= private_key %>
 CAfile = <%= ca_file %>
 CRLfile = <%= crl_file %>
 sslVersion = <%= ssl_version_real %>
+<% if @options -%>
+options = <%= options %>
+<% end -%>
+
 
 <% if @verify -%>
 verify = <%= verify %>
